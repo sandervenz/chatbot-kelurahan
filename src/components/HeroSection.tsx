@@ -28,10 +28,10 @@ export function HeroSection() {
           spacing={6}
           color="white"
         >
-          <Heading as="h1" size="2xl">
+          <Heading as="h1" size="2xl" textAlign="center">
             Eksplor Kelurahan Kebon Baru
           </Heading>
-          <Text fontSize="xl">
+          <Text fontSize="xl" textAlign="center">
             Wisata, Kuliner, dan Transportasi dalam Genggamanmu!
           </Text>
         </VStack>

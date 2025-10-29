@@ -24,7 +24,7 @@ const features = [
 export function FeaturesSection() {
   return (
     <Box bg="blue.50" py={16}>
-      <Container maxW="container.md">
+      <Container maxW="container.lg">
         <VStack spacing={12}>
           <Box textAlign="center">
             <Heading size="xl" mb={2}>

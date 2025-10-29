@@ -1,11 +1,11 @@
 'use client';
 
-import { Box, Container, Heading, Text, SimpleGrid, VStack, Image } from '@chakra-ui/react';
+import { Box, Container, Heading, Text, SimpleGrid, VStack, Image, Center } from '@chakra-ui/react';
 
 export function WelcomeSection() {
   return (
   <Container maxW="container.lg" py={16}>
-      <Heading as="h2" size="xl" color="blue.600" mb={6}>
+      <Heading as="h2" size="xl" color="blue.600" mb={6} textAlign="center">
         Selamat Datang dari Kami di Kebon Baru
       </Heading>
 
