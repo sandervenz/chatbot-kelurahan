@@ -19,7 +19,6 @@ export function LocationCard({ image, title, description, address, onClick, chil
       boxShadow="md"
       overflow="hidden"
       p={{ base: 3, md: 4 }}
-      mb={4}
       minH={{ base: '220px', md: '220px' }}
       maxH={{ base: '220px', md: '220px' }}
       display="flex"

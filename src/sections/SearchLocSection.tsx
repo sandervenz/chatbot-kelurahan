@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Container, Heading, VStack, Input, InputGroup, InputLeftElement, Icon } from '@chakra-ui/react';
+import { Box, Container, Heading, VStack, Input, InputGroup, InputRightElement, Icon } from '@chakra-ui/react';
 import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import { LocationCard } from '@/components/LocationCard';
@@ -76,15 +76,12 @@ export function LokasiTerdekatSection() {
   );
 
   return (
-    <Box py={16} bg="#f6f8ed">
+    <Box py={12} bg="#f6f8ed">
       <Container maxW="container.lg">
-        <Heading as="h2" size="lg" color="blue.700" mb={8} textAlign="center">
+        <Heading as="h2" size="lg" color="blue.700" mb={6} textAlign="center">
           Mau Kemana Hari Ini?
         </Heading>
-        <InputGroup mb={8} maxW="lg" mx="auto">
-          <InputLeftElement pointerEvents="none">
-            <Icon as={FiSearch} color="gray.400" boxSize={6} />
-          </InputLeftElement>
+        <InputGroup mb={6} maxW="lg" mx="auto">
           <Input
             placeholder="Jelajahi"
             value={search}
@@ -93,23 +90,32 @@ export function LokasiTerdekatSection() {
             borderRadius="xl"
             fontSize="lg"
             fontWeight="medium"
-            pl={12}
+            pl={6}
             h={14}
             boxShadow="sm"
           />
+          <InputRightElement pointerEvents="none" h="full" display="flex" alignItems="center" pr={6}>
+            <Icon as={FiSearch} color="gray.400" boxSize={6}/>
+          </InputRightElement>
         </InputGroup>
-        <VStack spacing={6} align="stretch">
-          {filtered.map((loc) => (
-            <LocationCard
-              key={loc.id}
-              image={loc.image}
-              title={loc.title}
-              description={loc.description}
-              address={loc.address}
-              onClick={() => setSelected(loc)}
-            />
-          ))}
-        </VStack>
+        <Box
+          maxH={{ base: '400px', md: '500px' }}
+          overflowY="auto"
+          pr={2}
+        >
+          <VStack spacing={6} align="stretch">
+            {filtered.map((loc) => (
+              <LocationCard
+                key={loc.id}
+                image={loc.image}
+                title={loc.title}
+                description={loc.description}
+                address={loc.address}
+                onClick={() => setSelected(loc)}
+              />
+            ))}
+          </VStack>
+        </Box>
       </Container>
 
       {/* Modal for location detail */}

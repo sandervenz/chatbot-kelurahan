@@ -85,7 +85,7 @@ export function CategoryGallery() {
         </Heading>
       </Container>
 
-      <Container maxW="container.xl">
+      <Container maxW="container.xl" maxH="650px">
         <Box bg={theme.containerBg} borderRadius="2xl" p={{ base: 4, md: 8 }}>
           {/* Category pills */}
           <HStack spacing={4} justify="center" mb={6}>
