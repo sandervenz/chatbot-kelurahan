@@ -78,7 +78,7 @@ export function CategoryGallery() {
   // keep images map for convenience; layouts below reference galleryImages directly
 
   return (
-    <Box py={16}>
+    <Box py={16} bg="#f6f8ed">
       <Container maxW="container.lg">
         <Heading textAlign="center" color="blue.700" mb={6}>
           {theme.title}
