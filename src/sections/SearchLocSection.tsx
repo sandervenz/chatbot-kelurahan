@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Container, Heading, VStack, Input, InputGroup, InputRightElement, Icon } from '@chakra-ui/react';
+import { Box, Container, Heading, VStack, Input, InputGroup, InputRightElement, Icon, Divider } from '@chakra-ui/react';
 import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import { LocationCard } from '@/components/LocationCard';
@@ -68,7 +68,6 @@ const mockLocations = [
  
 
 export function LokasiTerdekatSection() {
-
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState<Location | null>(null);
   const filtered = mockLocations.filter((loc) =>
@@ -76,8 +75,15 @@ export function LokasiTerdekatSection() {
   );
 
   return (
-    <Box py={12} bg="#f6f8ed">
+    <Box pt={8} pb={{ base: 6, md: 8 }} bg="#FFFDF0">
       <Container maxW="container.lg">
+        <Divider
+          w={{ base: '60%', md: '60%' }}
+          mx="auto"
+          mb={8}
+          borderColor="gray.300"
+          opacity={0.7}
+        />
         <Heading as="h2" size="lg" color="blue.700" mb={6} textAlign="center">
           Mau Kemana Hari Ini?
         </Heading>
@@ -93,15 +99,19 @@ export function LokasiTerdekatSection() {
             pl={6}
             h={14}
             boxShadow="sm"
+            _focus={{ borderColor: "blue.400", boxShadow: "0 0 0 2px #2563eb33" }}
           />
           <InputRightElement pointerEvents="none" h="full" display="flex" alignItems="center" pr={6}>
             <Icon as={FiSearch} color="gray.400" boxSize={6}/>
           </InputRightElement>
         </InputGroup>
         <Box
-          maxH={{ base: '400px', md: '500px' }}
+          maxH={{ base: '400px', md: '600px' }}
           overflowY="auto"
           pr={2}
+          bg="white"
+          borderRadius="xl"
+          boxShadow="sm"
         >
           <VStack spacing={6} align="stretch">
             {filtered.map((loc) => (

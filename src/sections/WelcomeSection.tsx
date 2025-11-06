@@ -4,9 +4,9 @@ import { Box, Container, Heading, Text, SimpleGrid, VStack, Image } from '@chakr
 
 export function WelcomeSection() {
   return (
-    <Box bg="#f6f8ed">
+    <Box bg="#FFFDF0">
       <Container maxW="container.lg" py={16}>
-        <Heading as="h2" size="xl" color="blue.600" mb={6} textAlign="center">
+        <Heading textAlign="center" color="blue.700" mb={6}>
           Selamat Datang dari Kami di Kebon Baru
         </Heading>
 
@@ -83,7 +83,7 @@ export function WelcomeSection() {
 
           <VStack align="stretch" spacing={4} h={{ base: 'auto', md: '520px' }}>
             <Box>
-              <Text color="blue.600" fontWeight="700" fontSize={{ base: 'lg', md: 'xl' }}>
+              <Text color="blue.700" fontWeight="700" fontSize={{ base: 'lg', md: 'xl' }}>
                 Kelurahan Kebon Baru
               </Text>
             </Box>
