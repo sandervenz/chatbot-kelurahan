@@ -61,7 +61,7 @@ const REVIEWS: Review[] = [
 
 export function ReviewsSection() {
   return (
-    <Box bg="#FFFDF0" py={{ base: 10, md: 14 }}>
+    <Box bg="#FFFDF0" py={8}>
       <Container maxW="container.lg">
         <Text
           fontSize="sm"

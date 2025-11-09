@@ -9,6 +9,9 @@ import { CategoryGallery } from "@/sections/CategoryGallery";
 import { SearchLocSection } from "@/sections/SearchLocSection";
 import { MapsSection } from "@/sections/MapsSection";
 import { ReviewsSection } from "@/sections/ReviewsSection";
+import { ContactSection } from "@/sections/ContactSection";
+import { FAQSection } from "@/sections/FAQSection";
+import { Footer } from "@/sections/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +24,9 @@ export default function Home() {
       <SearchLocSection />
       <MapsSection />
       <ReviewsSection />
+      <ContactSection />
+      <FAQSection />
+      <Footer />
     </Box>
   );
 }
