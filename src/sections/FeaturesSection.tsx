@@ -27,7 +27,7 @@ export function FeaturesSection() {
       <Container maxW="container.lg">
         <VStack spacing={12}>
           <Box textAlign="center" mb={2}>
-            <Heading size="xl" mb={0} color="white" fontWeight="bold">
+            <Heading size="xl" mb={0} color="white">
               Tiga Daya Tarik Utama{' '}
               <Box
                 as="span"

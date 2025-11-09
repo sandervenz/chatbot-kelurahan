@@ -73,8 +73,8 @@ export function ReviewsSection() {
           Suara dari Kebon Baru
         </Text>
 
-        <Heading as="h2" size="lg" color="blue.700" mb={{ base: 6, md: 8 }} lineHeight="short">
-          Review Populer & Terbaru dari Wilayah Kelurahan Kebon Baru
+        <Heading color="blue.700" mb={6} lineHeight="short">
+          Review Terbaru dari Wilayah Kelurahan Kebon Baru
         </Heading>
         {/* Full-bleed horizontal scroller on mobile, 5-column grid on large screens */}
         <Box

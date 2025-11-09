@@ -20,7 +20,7 @@ export function HeroSection() {
         bottom={0}
         bg="blackAlpha.600"
       />
-      <Container maxW="container.md" position="relative" height="100%">
+      <Container maxW="container.lg" position="relative" height="100%">
         <VStack
           justify="center"
           align="center"

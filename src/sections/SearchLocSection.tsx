@@ -84,7 +84,7 @@ export function SearchLocSection() {
           borderColor="gray.300"
           opacity={0.7}
         />
-        <Heading as="h2" size="lg" color="blue.700" mb={6} textAlign="center">
+        <Heading color="blue.700" mb={6} textAlign="center">
           Mau Kemana Hari Ini?
         </Heading>
         <InputGroup mb={6} maxW="lg" mx="auto">

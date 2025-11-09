@@ -3,12 +3,25 @@
 import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { ReactNode } from 'react';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'] });
 
 // Use Poppins as the app font (matches layout.tsx)
 const theme = extendTheme({
   fonts: {
-    heading: `Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial`,
-    body: `Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial`,
+    heading: poppins.style.fontFamily,
+    body: poppins.style.fontFamily,
+  },
+  styles: {
+    global: {
+      'html, body': {
+        fontFamily: poppins.style.fontFamily,
+      },
+      'h1, h2, h3, h4, h5, h6': {
+        fontFamily: poppins.style.fontFamily,
+      },
+    },
   },
 });
 
