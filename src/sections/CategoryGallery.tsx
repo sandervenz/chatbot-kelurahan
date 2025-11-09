@@ -75,8 +75,6 @@ export function CategoryGallery() {
     }
   }, [active]);
 
-  // keep images map for convenience; layouts below reference galleryImages directly
-
   return (
     <Box py={16} bg="#FFFDF0">
       <Container maxW="container.lg">

@@ -67,7 +67,7 @@ const mockLocations = [
 ];
  
 
-export function LokasiTerdekatSection() {
+export function SearchLocSection() {
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState<Location | null>(null);
   const filtered = mockLocations.filter((loc) =>
